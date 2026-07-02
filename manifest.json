@@ -1,0 +1,39 @@
+{
+  "name": "TrainLog v5 - Suivi retards",
+  "short_name": "TrainLog",
+  "description": "Enregistrez vos retards de train et comparez avec les données SNCF",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0f1e",
+  "theme_color": "#0a0f1e",
+  "orientation": "portrait",
+  "lang": "fr",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Trajet rapide",
+      "short_name": "⚡ Rapide",
+      "description": "Démarrer un trajet rapide sans ouvrir l'app",
+      "url": "./index.html?action=quick",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Journal",
+      "short_name": "📋 Journal",
+      "description": "Voir le journal des trajets",
+      "url": "./index.html?tab=journal",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Stats",
+      "short_name": "📊 Stats",
+      "description": "Voir les statistiques",
+      "url": "./index.html?tab=stats",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "categories": ["utilities", "productivity"]
+}
