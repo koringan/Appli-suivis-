@@ -174,7 +174,6 @@ nav{display:flex;border-bottom:1px solid var(--bd);background:var(--s1);position
   <button class="tab" onclick="switchTab('sncf',this)">🔍 SNCF</button>
 </nav>
 
-<!-- ══ TRAJETS ══ -->
 <div class="view active" id="view-trajets">
   <div id="aj-block" style="display:none"></div>
   <div id="smart-suggest" style="margin-bottom:13px"></div>
@@ -197,7 +196,6 @@ nav{display:flex;border-bottom:1px solid var(--bd);background:var(--s1);position
   <div id="fav-list"></div>
 </div>
 
-<!-- ══ JOURNAL ══ -->
 <div class="view" id="view-journal">
   <div class="filters" id="filters"></div>
   <div class="sort-row">
@@ -221,7 +219,6 @@ nav{display:flex;border-bottom:1px solid var(--bd);background:var(--s1);position
   <button class="btn btn-outline" onclick="openModal('modal-manual')">＋ Entrée manuelle</button>
 </div>
 
-<!-- ══ STATS ══ -->
 <div class="view" id="view-stats">
   <div class="sf-box" id="sf-box"></div>
   <div class="stat-grid" id="stat-grid"></div>
@@ -241,7 +238,6 @@ nav{display:flex;border-bottom:1px solid var(--bd);background:var(--s1);position
   <button class="btn btn-red" onclick="clearAll()">🗑 Effacer toutes les données</button>
 </div>
 
-<!-- ══ SNCF ══ -->
 <div class="view" id="view-sncf">
   <div class="sec">Comparaison SNCF vs Mes données</div>
   <div class="card" style="border-color:var(--ac);margin-bottom:13px">
@@ -254,7 +250,6 @@ nav{display:flex;border-bottom:1px solid var(--bd);background:var(--s1);position
   <div id="sncf-list"></div>
 </div>
 
-<!-- ══ MODALS ══ -->
 <div class="modal-ov" id="modal-start" onclick="closeModal('modal-start')">
   <div class="modal-inner" onclick="event.stopPropagation()">
     <div class="modal-handle"></div>
@@ -574,7 +569,7 @@ function renderFavSncfPicker() {
 }
 
 
-async async function checkManualTrain(val) {
+async function checkManualTrain(val) {
   const num = val.replace('#', '').trim();
   if(!num) return;
   toast('⏳ Vérification du train ' + num + '...');
